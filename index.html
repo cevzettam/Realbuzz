@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RealbuzzKorea - Premium Medical & Lifestyle Experiences</title>
-    <meta name="description" content="Korea's premier medical tourism platform featuring world-class hospitals, cutting-edge treatments, and authentic K-lifestyle experiences.">
-    
+    <meta name="description"
+        content="Korea's premier medical tourism platform featuring world-class hospitals, cutting-edge treatments, and authentic K-lifestyle experiences.">
+
     <!-- External CDN Links -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    
+
     <style>
         * {
             margin: 0;
@@ -40,8 +42,8 @@
             overflow-x: hidden;
         }
 
-        .sosial-connect{
-            color:white;
+        .sosial-connect {
+            color: white;
         }
 
         /* Glassmorphism Navigation */
@@ -95,7 +97,7 @@
         }
 
         .nav-link {
-            color:#181e35;
+            color: #181e35;
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s ease;
@@ -276,40 +278,40 @@
         }
 
         /* Masaüstü ve tablet dışında görünür */
-@media (min-width: 769px) {
-    .floating-card {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(20px);
-        border-radius: 20px;
-        padding: 2rem;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        animation: float 6s ease-in-out infinite;
-        box-shadow: var(--shadow-medium);
-    }
+        @media (min-width: 769px) {
+            .floating-card {
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(20px);
+                border-radius: 20px;
+                padding: 2rem;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                animation: float 6s ease-in-out infinite;
+                box-shadow: var(--shadow-medium);
+            }
 
-    .floating-card:nth-child(2) {
-        animation-delay: -2s;
-        position: absolute;
-        top: -2rem;
-        right: -2rem;
-        transform: scale(0.8);
-    }
+            .floating-card:nth-child(2) {
+                animation-delay: -2s;
+                position: absolute;
+                top: -2rem;
+                right: -2rem;
+                transform: scale(0.8);
+            }
 
-    .floating-card:nth-child(3) {
-        animation-delay: -4s;
-        position: absolute;
-        bottom: -2rem;
-        left: -1.5rem;
-        transform: scale(0.7);
-    }
-}
+            .floating-card:nth-child(3) {
+                animation-delay: -4s;
+                position: absolute;
+                bottom: -2rem;
+                left: -1.5rem;
+                transform: scale(0.7);
+            }
+        }
 
-/* Mobilde tamamen gizle */
-@media (max-width: 768px) {
-    .floating-card {
-        display: none !important;
-    }
-}
+        /* Mobilde tamamen gizle */
+        @media (max-width: 768px) {
+            .floating-card {
+                display: none !important;
+            }
+        }
 
 
         /* Trust Section */
@@ -381,6 +383,7 @@
             color: var(--text-light);
             line-height: 1.6;
         }
+
         .section-title2 {
             font-size: 3rem;
             font-weight: 800;
@@ -391,6 +394,7 @@
             background-clip: text;
             color: transparent;
         }
+
         .section-subtitle2 {
             font-size: 1.2rem;
             color: var(--text-light);
@@ -407,6 +411,7 @@
             background-clip: text;
             color: transparent;
         }
+
         .section-subtitle3 {
             font-size: 1.2rem;
             color: var(--text-light);
@@ -986,14 +991,29 @@
 
         /* Animations */
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
         @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
         @keyframes fadeInUp {
@@ -1001,6 +1021,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -1386,7 +1407,9 @@
         }
 
         /* High DPI displays */
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        @media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+
             .floating-card,
             .trust-card,
             .hospital-card,
@@ -1397,6 +1420,7 @@
 
         /* Print styles */
         @media print {
+
             .navbar,
             .mobile-menu,
             .whatsapp-float,
@@ -1419,6 +1443,7 @@
 
         /* Touch device optimizations */
         @media (hover: none) and (pointer: coarse) {
+
             .hospital-card:hover,
             .service-card:hover,
             .trust-card:hover {
@@ -1440,6 +1465,7 @@
 
         /* Reduce motion for accessibility */
         @media (prefers-reduced-motion: reduce) {
+
             *,
             *::before,
             *::after {
@@ -1489,7 +1515,88 @@
             outline: 2px solid var(--accent-color);
             outline-offset: 2px;
         }
+        .hospital-slider {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            border-radius: 12px 12px 0 0;
+            position: relative;
+            background: linear-gradient(45deg, #000000, #764ba2);
+        }
+
+        .slides {
+            display: flex;
+            height: 100%;
+            width: 1200%;
+            /* 12 resim × 100% */
+            animation: slide 48s infinite;
+        }
+
+        .slides img {
+            width: calc(100% / 12);
+            /* Her resim eşit genişlikte */
+            height: 280px;
+            /* Slider yüksekliği kadar sabit */
+            object-fit: cover;
+            /* Resim taşmadan tam oturur */
+            flex-shrink: 0;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0%);
+            }
+
+            8.3% {
+                transform: translateX(-8.333%);
+            }
+
+            16.6% {
+                transform: translateX(-16.666%);
+            }
+
+            25% {
+                transform: translateX(-25%);
+            }
+
+            33.3% {
+                transform: translateX(-33.333%);
+            }
+
+            41.6% {
+                transform: translateX(-41.666%);
+            }
+
+            50% {
+                transform: translateX(-50%);
+            }
+
+            58.3% {
+                transform: translateX(-58.333%);
+            }
+
+            66.6% {
+                transform: translateX(-66.666%);
+            }
+
+            75% {
+                transform: translateX(-75%);
+            }
+
+            83.3% {
+                transform: translateX(-83.333%);
+            }
+
+            91.6% {
+                transform: translateX(-91.666%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
     </style>
+
 </head>
 
 <body>
@@ -1499,7 +1606,7 @@
             <div class="logo">
                 <i class="fas fa-heartbeat"></i> RealbuzzKorea
             </div>
-            
+
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#hospitals" class="nav-link">Hospitals</a></li>
@@ -1508,11 +1615,11 @@
                 <li><a href="#testimonials" class="nav-link">Reviews</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            
+
             <a href="#contact" class="cta-button">
                 <i class="fab fa-whatsapp"></i> Get Consultation
             </a>
-            
+
             <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                 <i class="fas fa-bars"></i>
             </button>
@@ -1538,9 +1645,10 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-text" data-aos="fade-right">
-                <h1>World-Class <span class="highlight">Korean Healthcare</span> at Your Fingertips</h1>
-                <p>Experience cutting-edge medical treatments, premium K-beauty services, and authentic Korean lifestyle experiences with our trusted partner hospitals and clinics.</p>
-                
+                <h1>Where Global <span class="highlight">Luxury Meets Korean</span> Medical Excellence</h1>
+                <p>Experience cutting-edge medical treatments, premium K-beauty services, and authentic Korean lifestyle
+                    experiences with our trusted partner hospitals and clinics.</p>
+
                 <div class="hero-buttons">
                     <a href="#contact" class="btn-primary">
                         <i class="fab fa-whatsapp"></i> Free Consultation
@@ -1597,7 +1705,7 @@
                 <h3>JCI Accredited</h3>
                 <p>International healthcare standards and quality assurance</p>
             </div>
-            
+
             <div class="trust-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="trust-icon">
                     <i class="fas fa-award"></i>
@@ -1605,7 +1713,7 @@
                 <h3>5-Star Rating</h3>
                 <p>Consistently rated excellence by international patients</p>
             </div>
-            
+
             <div class="trust-card" data-aos="fade-up" data-aos-delay="300">
                 <div class="trust-icon">
                     <i class="fas fa-language"></i>
@@ -1613,7 +1721,7 @@
                 <h3>21 Languages</h3>
                 <p>Multilingual support including Russian, English, Chinese</p>
             </div>
-            
+
             <div class="trust-card" data-aos="fade-up" data-aos-delay="400">
                 <div class="trust-icon">
                     <i class="fas fa-shield-alt"></i>
@@ -1628,88 +1736,193 @@
     <section id="hospitals" class="hospitals-section">
         <div class="section-header" data-aos="fade-up">
             <h2 class="section-title">World-Class Partner Hospitals</h2>
-            <p class="section-subtitle">Discover Korea's most prestigious medical institutions, trusted by celebrities and international patients worldwide</p>
+            <p class="section-subtitle">Discover Korea's most prestigious medical institutions, trusted by celebrities
+                and international patients worldwide</p>
         </div>
 
         <div class="hospitals-grid">
             <div class="hospital-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="hospital-image">
-                    <div style="background: linear-gradient(45deg, #000000, #764ba2); height: 100%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-hospital" style="font-size: 4rem; color: white; opacity: 0.7;"></i>
+                    <div class="hospital-slider">
+                        <div class="slides">
+                            <img src="severance/[꾸미기]checkup-img001.jpg" alt="Severance Hospital 1">
+                            <img src="severance/[꾸미기]checkup-img002.jpg" alt="Severance Hospital 2">
+                            <img src="severance/[꾸미기]checkup-img003.jpg" alt="Severance Hospital 3">
+                            <img src="severance/[꾸미기]checkup-img004.jpg" alt="Severance Hospital 4">
+                            <img src="severance/[꾸미기]checkup-img005.jpg" alt="Severance Hospital 5">
+                            <img src="severance/[꾸미기]checkup-img006.jpg" alt="Severance Hospital 6">
+                            <img src="severance/[꾸미기]checkup-img007.jpg" alt="Severance Hospital 7">
+                            <img src="severance/[꾸미기]checkup-img008.jpg" alt="Severance Hospital 8">
+                            <img src="severance/[꾸미기]checkup-img009.jpg" alt="Severance Hospital 9">
+                            <img src="severance/[꾸미기]checkup-img010.jpg" alt="Severance Hospital 10">
+                            <img src="severance/[꾸미기]checkup-img011.jpg" alt="Severance Hospital 11">
+                            <img src="severance/[꾸미기]checkup-img012.jpg" alt="Severance Hospital 12">
+                        </div>
                     </div>
                     <div class="hospital-overlay">Presidential Standard</div>
                 </div>
+
+
                 <div class="hospital-content">
-                    <h3 class="hospital-name">Samsung Medical Center</h3>
-                    <p class="hospital-description">Korea's premier hospital serving presidential families and international VIPs with cutting-edge medical technology.</p>
+                    <h3 class="hospital-name">Severance Hospital (Yonsei University Health System)</h3>
+                    <p class="hospital-description">
+                        Founded in 1885, Korea’s oldest and most prestigious university hospital—leading in research,
+                        education, and patient-centered care for over a century.
+                    </p>
                     <ul class="hospital-features">
-                        <li><i class="fas fa-check"></i> 82% bone marrow transplant success rate</li>
-                        <li><i class="fas fa-check"></i> Proton therapy center</li>
-                        <li><i class="fas fa-check"></i> 1,979 beds with VIP services</li>
-                        <li><i class="fas fa-check"></i> Advanced robotic surgery</li>
+                        <li><i class="fas fa-check"></i> Established 1885; pioneer of modern medicine in Asia</li>
+                        <li><i class="fas fa-check"></i> 3,000+ beds and 6,000+ medical professionals</li>
+                        <li><i class="fas fa-check"></i> 50+ specialty centers (Cancer, Cardiovascular, Children’s,
+                            Rehab, Robot Surgery)</li>
+                        <li><i class="fas fa-check"></i> Advanced tech: PET-CT, 3.0T MRI, Da Vinci Xi, AI-assisted
+                            diagnostics</li>
+                        <li><i class="fas fa-check"></i> IHCC: multilingual coordination (EN/AR/ZH/JA/RU), visa & travel
+                            support, airport pickup</li>
+                        <li><i class="fas fa-check"></i> 200,000+ international patients since 2007</li>
+                        <li><i class="fas fa-check"></i> JCI-accredited; Newsweek Top-3 in Korea</li>
+                        <li><i class="fas fa-check"></i> Global partners: Harvard, Johns Hopkins, Mayo Clinic</li>
+                        <li><i class="fas fa-check"></i> Motto: “Excellence in Medicine, Compassion in Care.”</li>
                     </ul>
                     <button class="hospital-button">Learn More</button>
                 </div>
+
             </div>
 
-            <div class="hospital-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="hospital-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="hospital-image">
-                    <div style="background: linear-gradient(45deg, #f093fb, #000000); height: 100%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-university" style="font-size: 4rem; color: white; opacity: 0.7;"></i>
-                    </div>
-                    <div class="hospital-overlay">#1 in Korea</div>
-                </div>
-                <div class="hospital-content">
-                    <h3 class="hospital-name">Seoul National University Hospital</h3>
-                    <p class="hospital-description">Korea's top-ranked hospital for 19 consecutive years, serving 30,000+ international patients from 80+ countries.</p>
-                    <ul class="hospital-features">
-                        <li><i class="fas fa-check"></i> 140 years of medical excellence</li>
-                        <li><i class="fas fa-check"></i> Fully digitized since 2004</li>
-                        <li><i class="fas fa-check"></i> 30,000+ international patients</li>
-                        <li><i class="fas fa-check"></i> Research-based treatments</li>
-                    </ul>
-                    <button class="hospital-button">Learn More</button>
-                </div>
-            </div>
-
-            <div class="hospital-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="hospital-image">
-                    <div style="background: linear-gradient(45deg, #000000, #00f2fe); height: 100%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-eye" style="font-size: 4rem; color: white; opacity: 0.7;"></i>
+                    <div class="hospital-slider">
+                        <div class="slides">
+                            <img src="GSeyececlinic/[꾸미기]스타.jpg" alt="Severance Hospital 1">
+                            <img src="GSeyececlinic/[꾸미기]스타10.jpg" alt="Severance Hospital 2">
+                            <img src="GSeyececlinic/[꾸미기]스타3.jpg" alt="Severance Hospital 3">
+                            <img src="GSeyececlinic/[꾸미기]스타4.jpg" alt="Severance Hospital 4">
+                            <img src="GSeyececlinic/[꾸미기]스타5.jpg" alt="Severance Hospital 5">
+                            <img src="GSeyececlinic/[꾸미기]스타6.jpg" alt="Severance Hospital 6">
+                            <img src="GSeyececlinic/[꾸미기]스타7.jpg" alt="Severance Hospital 7">
+                            <img src="GSeyececlinic/[꾸미기]스타8.jpg" alt="Severance Hospital 8">
+                            <img src="GSeyececlinic/[꾸미기]스타9.jpg" alt="Severance Hospital 9">
+                            <img src="GSeyececlinic/[꾸미기]스타.jpg" alt="Severance Hospital 10">
+                            <img src="GSeyececlinic/[꾸미기]스타10.jpg" alt="Severance Hospital 11">
+                            <img src="GSeyececlinic/[꾸미기]스타3.jpg" alt="Severance Hospital 12">
+                        </div>
                     </div>
                     <div class="hospital-overlay">Celebrity Choice</div>
                 </div>
+
+
                 <div class="hospital-content">
-                    <h3 class="hospital-name">GS Eye Clinic</h3>
-                    <p class="hospital-description">Korea's most trusted eye surgery center, specializing in LASIK, LASEK, and SMILE procedures for celebrities and international patients.</p>
+                    <h3 class="hospital-name">GS Eye Clinic (Advanced Vision Correction Center, Gangnam, Seoul)</h3>
+                    <p class="hospital-description">
+                      Located in the heart of Gangnam, Korea’s largest and most trusted ophthalmology center — 
+                      chosen by top K-pop idols, actors, and athletes for advanced vision correction and eye health.
+                    </p>
                     <ul class="hospital-features">
-                        <li><i class="fas fa-check"></i> Latest laser technology (Schwind Amaris)</li>
-                        <li><i class="fas fa-check"></i> 10-minute procedures</li>
-                        <li><i class="fas fa-check"></i> Same-day recovery</li>
-                        <li><i class="fas fa-check"></i> English-speaking coordinators</li>
-                    </ul>
+                        <li><i class="fas fa-check"></i> 15+ years of surgical excellence in vision correction</li>
+                        <li><i class="fas fa-check"></i> SMILE &amp; SMILE PRO (ZEISS VISUMAX 800), LASIK &amp; LASEK with German laser systems</li>
+                        <li><i class="fas fa-check"></i> ICL (Implantable Lens) &amp; Multifocal Cataract Surgery</li>
+                        <li><i class="fas fa-check"></i> Cornea regeneration &amp; advanced Dry Eye treatments</li>
+                        <li><i class="fas fa-check"></i> Equipped with ZEISS VISUMAX 800 / MEL 90 / Pentacam / FEMTO LASER systems</li>
+                        <li><i class="fas fa-check"></i> Real-time vision tracking &amp; clean-room surgery standards</li>
+                        <li><i class="fas fa-check"></i> Multilingual care (EN/ZH/JA), online consults &amp; overseas aftercare</li>
+                        <li><i class="fas fa-check"></i> 30,000+ successful surgeries; 1 min from Sinnonhyeon Station</li>
+                        <li><i class="fas fa-check"></i> Motto: “Trusted by global patients — and Korea’s brightest stars.”</li>
+                      </ul>
                     <button class="hospital-button">Learn More</button>
-                </div>
+                  </div>
+                  
+
             </div>
 
-            <div class="hospital-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="hospital-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="hospital-image">
-                    <div style="background: linear-gradient(45deg, #43e97b, #000000); height: 100%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-heart" style="font-size: 4rem; color: white; opacity: 0.7;"></i>
+                    <div class="hospital-slider">
+                        <div class="slides">
+                            <img src="severance/[꾸미기]checkup-img001.jpg" alt="Severance Hospital 1">
+                            <img src="severance/[꾸미기]checkup-img002.jpg" alt="Severance Hospital 2">
+                            <img src="severance/[꾸미기]checkup-img003.jpg" alt="Severance Hospital 3">
+                            <img src="severance/[꾸미기]checkup-img004.jpg" alt="Severance Hospital 4">
+                            <img src="severance/[꾸미기]checkup-img005.jpg" alt="Severance Hospital 5">
+                            <img src="severance/[꾸미기]checkup-img006.jpg" alt="Severance Hospital 6">
+                            <img src="severance/[꾸미기]checkup-img007.jpg" alt="Severance Hospital 7">
+                            <img src="severance/[꾸미기]checkup-img008.jpg" alt="Severance Hospital 8">
+                            <img src="severance/[꾸미기]checkup-img009.jpg" alt="Severance Hospital 9">
+                            <img src="severance/[꾸미기]checkup-img010.jpg" alt="Severance Hospital 10">
+                            <img src="severance/[꾸미기]checkup-img011.jpg" alt="Severance Hospital 11">
+                            <img src="severance/[꾸미기]checkup-img012.jpg" alt="Severance Hospital 12">
+                        </div>
                     </div>
-                    <div class="hospital-overlay">Most Respected</div>
+                    <div class="hospital-overlay">Serenique Program</div>
                 </div>
+
+
                 <div class="hospital-content">
-                    <h3 class="hospital-name">Asan Medical Center</h3>
-                    <p class="hospital-description">Korea's largest hospital with 2,432 beds, recognized as "Most Respected Hospital" for 17 consecutive years.</p>
+                    <h3 class="hospital-name">Severance Health Checkup Center</h3>
+                    <p class="hospital-description">
+                      A premier preventive medicine center by Yonsei University Health System — guiding clients toward a
+                      “Healthy and Happy 100-Year Life” through personalized, lifelong health management.
+                    </p>
                     <ul class="hospital-features">
-                        <li><i class="fas fa-check"></i> 67,000+ surgeries annually</li>
-                        <li><i class="fas fa-check"></i> Da Vinci robotic surgery</li>
-                        <li><i class="fas fa-check"></i> Comprehensive cancer center</li>
-                        <li><i class="fas fa-check"></i> International patient services</i>
+                      <li><i class="fas fa-check"></i> Established 1994; 20,000+ clients annually near Seoul Station</li>
+                      <li><i class="fas fa-check"></i> Personalized health planning &amp; one-on-one consultation with Severance professors</li>
+                      <li><i class="fas fa-check"></i> Focus on early diagnosis, disease prevention &amp; lifestyle improvement</li>
+                      <li><i class="fas fa-check"></i> Fully integrated with Severance Hospital for seamless specialist care</li>
+                      <li><i class="fas fa-check"></i> Premium VIP services with minimal waiting &amp; limited daily appointments</li>
+                      <li><i class="fas fa-check"></i> Body Remodeling Center &amp; Yonsei Golf Science for balance &amp; biomechanics</li>
+                      <li><i class="fas fa-check"></i> Advanced diagnostics: 3.0T MRI, PET-CT, DEXA, Coronary CT, Hormone &amp; Genetic tests</li>
+                      <li><i class="fas fa-check"></i> AI-powered lab automation for precision &amp; early detection</li>
+                      <li><i class="fas fa-check"></i> Motto: “Beyond checkups — a lifetime health journey with Korea’s most trusted name.”</li>
                     </ul>
                     <button class="hospital-button">Learn More</button>
+                  </div>
+                  
+                  
+
+            </div>
+
+            <div class="hospital-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="hospital-image">
+                    <div class="hospital-slider">
+                        <div class="slides">
+                            <img src="Dojakgi/089f146ae4481b0359b033930423eefa.jpg" alt="Severance Hospital 1">
+                            <img src="Dojakgi/baftar-dermatology-clinic-asnow-design-and-construct_13.jpg" alt="Severance Hospital 2">
+                            <img src="Dojakgi/baftar-dermatology-clinic-asnow-design-and-construct_16.jpg" alt="Severance Hospital 3">
+                            <img src="Dojakgi/Social-Media-Banner-39.png.webp" alt="Severance Hospital 4">
+                            <img src="Dojakgi/089f146ae4481b0359b033930423eefa.jpg" alt="Severance Hospital 5">
+                            <img src="Dojakgi/baftar-dermatology-clinic-asnow-design-and-construct_13.jpg" alt="Severance Hospital 6">
+                            <img src="Dojakgi/baftar-dermatology-clinic-asnow-design-and-construct_13.jpg" alt="Severance Hospital 7">
+                            <img src="Dojakgi/baftar-dermatology-clinic-asnow-design-and-construct_16.jpg" alt="Severance Hospital 8">
+                            <img src="Dojakgi/Social-Media-Banner-39.png.webp" alt="Severance Hospital 9">
+                            <img src="Dojakgi/089f146ae4481b0359b033930423eefa.jpg" alt="Severance Hospital 10">
+                            <img src="Dojakgi/baftar-dermatology-clinic-asnow-design-and-construct_13.jpg" alt="Severance Hospital 11">
+                            <img src="Dojakgi/Social-Media-Banner-39.png.webp" alt="Severance Hospital 12">
+                        </div>
+                    </div>
+                    <div class="hospital-overlay">Lumine Class</div>
                 </div>
+
+
+                <div class="hospital-content">
+                    <h3 class="hospital-name">Dojakgi Clinic</h3>
+                    <p class="hospital-description">
+                      A boutique dermatology and aesthetic clinic in Seoul — redefining natural beauty through
+                      advanced skin science, personalized care, and artistry in aesthetic medicine.
+                    </p>
+                    <ul class="hospital-features">
+                      <li><i class="fas fa-check"></i> Specialized in anti-aging, lifting, and skin rejuvenation</li>
+                      <li><i class="fas fa-check"></i> Premium laser and RF systems for precision treatment</li>
+                      <li><i class="fas fa-check"></i> Non-surgical facial contouring and skin tightening</li>
+                      <li><i class="fas fa-check"></i> Personalized skincare &amp; anti-aging programs</li>
+                      <li><i class="fas fa-check"></i> Korean beauty approach — natural, balanced, elegant</li>
+                      <li><i class="fas fa-check"></i> Comfortable, private treatment suites</li>
+                      <li><i class="fas fa-check"></i> Trusted by models and professionals in Gangnam</li>
+                      <li><i class="fas fa-check"></i> Coming Soon — grand opening announcement soon!</li>
+                    </ul>
+                    <button class="hospital-button">Coming Soon</button>
+                  </div>
+                  
+                  
+                  
+
             </div>
         </div>
     </section>
@@ -1718,7 +1931,8 @@
     <section id="services" class="services-section">
         <div class="section-header" data-aos="fade-up">
             <h2 class="section-title">Premium Medical Services</h2>
-            <p class="section-subtitle">Experience world-renowned Korean medical expertise with significant cost savings compared to Western countries</p>
+            <p class="section-subtitle">Experience world-renowned Korean medical expertise with significant cost savings
+                compared to Western countries</p>
         </div>
 
         <div class="services-grid">
@@ -1727,7 +1941,8 @@
                     <i class="fas fa-cut"></i>
                 </div>
                 <h3 class="service-title">Plastic Surgery</h3>
-                <p class="service-description">Advanced cosmetic and reconstructive procedures with natural-looking results using cutting-edge techniques.</p>
+                <p class="service-description">Advanced cosmetic and reconstructive procedures with natural-looking
+                    results using cutting-edge techniques.</p>
                 <div class="price-badge">From $2,500 (Save 50%)</div>
             </div>
 
@@ -1736,7 +1951,8 @@
                     <i class="fas fa-ribbon"></i>
                 </div>
                 <h3 class="service-title">Cancer Treatment</h3>
-                <p class="service-description">State-of-the-art oncology care including proton therapy, immunotherapy, and robotic surgery.</p>
+                <p class="service-description">State-of-the-art oncology care including proton therapy, immunotherapy,
+                    and robotic surgery.</p>
                 <div class="price-badge">From $7,000 (Save 70%)</div>
             </div>
 
@@ -1745,7 +1961,8 @@
                     <i class="fas fa-heart"></i>
                 </div>
                 <h3 class="service-title">Cardiac Surgery</h3>
-                <p class="service-description">Advanced heart procedures with 92% success rate including bypass surgery and valve replacements.</p>
+                <p class="service-description">Advanced heart procedures with 92% success rate including bypass surgery
+                    and valve replacements.</p>
                 <div class="price-badge">From $20,000 (Save 80%)</div>
             </div>
 
@@ -1754,7 +1971,8 @@
                     <i class="fas fa-baby"></i>
                 </div>
                 <h3 class="service-title">IVF & Fertility</h3>
-                <p class="service-description">High success rate fertility treatments with genetic testing and gender selection options.</p>
+                <p class="service-description">High success rate fertility treatments with genetic testing and gender
+                    selection options.</p>
                 <div class="price-badge">From $4,500 (65% Success Rate)</div>
             </div>
 
@@ -1763,7 +1981,8 @@
                     <i class="fas fa-eye"></i>
                 </div>
                 <h3 class="service-title">Eye Surgery</h3>
-                <p class="service-description">LASIK, LASEK, and SMILE procedures with same-day recovery and 95%+ success rate.</p>
+                <p class="service-description">LASIK, LASEK, and SMILE procedures with same-day recovery and 95%+
+                    success rate.</p>
                 <div class="price-badge">From $1,500 (Quick Recovery)</div>
             </div>
 
@@ -1772,7 +1991,8 @@
                     <i class="fas fa-user-md"></i>
                 </div>
                 <h3 class="service-title">Hair Transplant</h3>
-                <p class="service-description">FUE method with natural results, scarless technique, and 95%+ graft survival rate.</p>
+                <p class="service-description">FUE method with natural results, scarless technique, and 95%+ graft
+                    survival rate.</p>
                 <div class="price-badge">From $1,500 (Natural Results)</div>
             </div>
         </div>
@@ -1782,7 +2002,8 @@
     <section class="stats-section">
         <div class="section-header" data-aos="fade-up">
             <h2 class="section-title2" style="color: white;">Our Results Speak for Themselves</h2>
-            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Leading the industry in medical excellence and patient satisfaction</p>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Leading the industry in medical excellence
+                and patient satisfaction</p>
         </div>
 
         <div class="stats-grid">
@@ -1810,8 +2031,8 @@
                 <span class="number" data-count="17">0+</span>
                 <span class="label">Countries Served</span>
             </div>
-            
-            
+
+
         </div>
     </section>
 
@@ -1826,37 +2047,43 @@
             <div class="process-step" data-aos="fade-up" data-aos-delay="100">
                 <div class="step-number">1</div>
                 <h3 class="step-title">Free Consultation</h3>
-                <p class="step-description">Connect with our Russian-speaking coordinators via WhatsApp or Telegram. Get personalized medical assessment within 2 hours.</p>
+                <p class="step-description">Connect with our Russian-speaking coordinators via WhatsApp or Telegram. Get
+                    personalized medical assessment within 2 hours.</p>
             </div>
 
             <div class="process-step" data-aos="fade-up" data-aos-delay="200">
                 <div class="step-number">2</div>
                 <h3 class="step-title">Doctor Matching</h3>
-                <p class="step-description">Our specialists analyze your case and match you with the best surgeon. Video consultation with professional translator included.</p>
+                <p class="step-description">Our specialists analyze your case and match you with the best surgeon. Video
+                    consultation with professional translator included.</p>
             </div>
 
             <div class="process-step" data-aos="fade-up" data-aos-delay="300">
                 <div class="step-number">3</div>
                 <h3 class="step-title">Travel Preparation</h3>
-                <p class="step-description">Complete package booking including clinic reservation, 3-5 star hotel, airport transfers, and visa support.</p>
+                <p class="step-description">Complete package booking including clinic reservation, 3-5 star hotel,
+                    airport transfers, and visa support.</p>
             </div>
 
             <div class="process-step" data-aos="fade-up" data-aos-delay="400">
                 <div class="step-number">4</div>
                 <h3 class="step-title">VIP Arrival</h3>
-                <p class="step-description">Meet our representative at the airport with personalized sign, comfortable transport, and document assistance.</p>
+                <p class="step-description">Meet our representative at the airport with personalized sign, comfortable
+                    transport, and document assistance.</p>
             </div>
 
             <div class="process-step" data-aos="fade-up" data-aos-delay="500">
                 <div class="step-number">5</div>
                 <h3 class="step-title">Treatment & Care</h3>
-                <p class="step-description">24/7 personal coordinator-translator, procedure accompaniment, daily reports, and family communication.</p>
+                <p class="step-description">24/7 personal coordinator-translator, procedure accompaniment, daily
+                    reports, and family communication.</p>
             </div>
 
             <div class="process-step" data-aos="fade-up" data-aos-delay="600">
                 <div class="step-number">6</div>
                 <h3 class="step-title">Recovery Support</h3>
-                <p class="step-description">Post-treatment care, follow-up consultations, spa services, and cultural experiences during recovery.</p>
+                <p class="step-description">Post-treatment care, follow-up consultations, spa services, and cultural
+                    experiences during recovery.</p>
             </div>
         </div>
     </section>
@@ -1865,12 +2092,15 @@
     <section id="testimonials" class="testimonials-section">
         <div class="section-header" data-aos="fade-up">
             <h2 class="section-title3" style="color: white;">What Our Patients Say</h2>
-            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Real experiences from patients who transformed their lives with Korean medical care</p>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Real experiences from patients who
+                transformed their lives with Korean medical care</p>
         </div>
 
         <div class="testimonials-grid">
             <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-                <p class="testimonial-text">"The level of care at Samsung Medical Center exceeded all my expectations. The Russian-speaking coordinator made everything seamless, and the results of my surgery were perfect."</p>
+                <p class="testimonial-text">"The level of care at Samsung Medical Center exceeded all my expectations.
+                    The Russian-speaking coordinator made everything seamless, and the results of my surgery were
+                    perfect."</p>
                 <div class="testimonial-author">
                     <div class="author-avatar">A</div>
                     <div class="author-info">
@@ -1881,7 +2111,8 @@
             </div>
 
             <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-                <p class="testimonial-text">"My cancer treatment at Severance Hospital gave me a new life. The proton therapy was painless, and the 5-year survival rate speaks for itself. Thank you, RealbuzzKorea!"</p>
+                <p class="testimonial-text">"My cancer treatment at Severance Hospital gave me a new life. The proton
+                    therapy was painless, and the 5-year survival rate speaks for itself. Thank you, RealbuzzKorea!"</p>
                 <div class="testimonial-author">
                     <div class="author-avatar">M</div>
                     <div class="author-info">
@@ -1892,7 +2123,9 @@
             </div>
 
             <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
-                <p class="testimonial-text">"The LASIK surgery at GS Eye Clinic was incredible. Same-day procedure, immediate results, and I could explore Seoul the next day! Professional service in perfect Russian."</p>
+                <p class="testimonial-text">"The LASIK surgery at GS Eye Clinic was incredible. Same-day procedure,
+                    immediate results, and I could explore Seoul the next day! Professional service in perfect Russian."
+                </p>
                 <div class="testimonial-author">
                     <div class="author-avatar">E</div>
                     <div class="author-info">
@@ -1916,42 +2149,64 @@
                         <i class="fab fa-whatsapp"></i>
                     </div>
                     <div class="sosial-connect">
-                    <h3>WhatsApp</h3>
-                    <p>+82-10-XXXX-XXXX</p>
-                    <small>Instant response in Russian</small>
-                </div>
+                        <h3>WhatsApp</h3>
+                        <p>+82 10-3774-4561</p>
+                        <small>Instant response in Russian</small>
+                    </div>
                 </div>
 
-                <div class="contact-card" onclick="openTelegram()" data-aos="zoom-in" data-aos-delay="200">
+                <!-- <div class="contact-card" onclick="openTelegram()" data-aos="zoom-in" data-aos-delay="200">
                     <div class="contact-icon">
                         <i class="fab fa-telegram"></i>
                     </div>
                     <div class="sosial-connect">
-                    <h3>Telegram</h3>
-                    <p>@KoreanMedicalTourism_RU</p>
-                    <small>24/7 consultation available</small>
+                        <h3>Telegram</h3>
+                        <p>@KoreanMedicalTourism_RU</p>
+                        <small>24/7 consultation available</small>
+                    </div>
+                </div> -->
+                <div class="contact-card" onclick="openInstagram()" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="sosial-connect">
+                        <h3>Instagram</h3>
+                        <p>https://www.instagram.com/realbuzzkorea/</p>
+                        <small>24/7 consultation available</small>
+                    </div>
                 </div>
-                </div>
+                
+                <script>
+                function openInstagram() {
+                  window.open('https://www.instagram.com/realbuzzkorea/', '_blank');
+                }
+                </script>
+                
             </div>
 
-            <div style="margin-top: 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+            <div
+                style="margin-top: 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
                 <div style="text-align: center; color: rgba(255,255,255,0.9);">
-                    <i class="fas fa-clock" style="font-size: 1.5rem; color: var(--accent-color); margin-bottom: 0.5rem;"></i>
+                    <i class="fas fa-clock"
+                        style="font-size: 1.5rem; color: var(--accent-color); margin-bottom: 0.5rem;"></i>
                     <p>2-Hour Response Time</p>
                 </div>
                 <div style="text-align: center; color: rgba(255,255,255,0.9);">
-                    <i class="fas fa-language" style="font-size: 1.5rem; color: var(--accent-color); margin-bottom: 0.5rem;"></i>
+                    <i class="fas fa-language"
+                        style="font-size: 1.5rem; color: var(--accent-color); margin-bottom: 0.5rem;"></i>
                     <p>Russian Language Support</p>
                 </div>
                 <div style="text-align: center; color: rgba(255,255,255,0.9);">
-                    <i class="fas fa-shield-alt" style="font-size: 1.5rem; color: var(--accent-color); margin-bottom: 0.5rem;"></i>
+                    <i class="fas fa-shield-alt"
+                        style="font-size: 1.5rem; color: var(--accent-color); margin-bottom: 0.5rem;"></i>
                     <p>100% Safe & Secure</p>
                 </div>
                 <div style="text-align: center; color: rgba(255,255,255,0.9);">
-                    <i class="fas fa-headset" style="font-size: 1.5rem; color: var(--accent-color); margin-bottom: 0.5rem;"></i>
+                    <i class="fas fa-headset"
+                        style="font-size: 1.5rem; color: var(--accent-color); margin-bottom: 0.5rem;"></i>
                     <p>24/7 Assistance</p>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -1961,23 +2216,17 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>RealbuzzKorea</h3>
-                <p>Korea's premier medical and lifestyle curation platform, connecting international patients with world-class healthcare and authentic K-experiences.</p>
-                <div style="margin-top: 1.5rem;">
-                    <a href="#" style="color: rgba(255,255,255,0.7); margin-right: 1rem; font-size: 1.2rem; transition: color 0.3s ease;">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#" style="color: rgba(255,255,255,0.7); font-size: 1.2rem; transition: color 0.3s ease;">
-                        <i class="fab fa-telegram"></i>
-                    </a>
-                </div>
+                <p>Korea's premier medical and lifestyle curation platform, connecting international patients with
+                    world-class healthcare and authentic K-experiences.</p>
             </div>
 
             <div class="footer-section">
                 <h3>Contact Info</h3>
                 <ul>
-                    <li><i class="fas fa-phone"></i> +82-10-XXXX-XXXX</li>
+                    <li><i class="fas fa-phone"></i> +82 10-3774-4561</li>
                     <li><i class="fab fa-whatsapp"></i> WhatsApp 24/7</li>
-                    <li><i class="fab fa-telegram"></i> @KoreanMedicalTourism_RU</li>
+                    <!-- <li><i class="fab fa-telegram"></i> @KoreanMedicalTourism_RU</li> -->
+                    <li><i class="fab fa-instagram"></i> https://www.instagram.com/realbuzzkorea</li>
                     <li><i class="fas fa-envelope"></i> info@realbuzzkorea.com</li>
                     <li><i class="fas fa-map-marker-alt"></i> Gangnam, Seoul, Korea</li>
                 </ul>
@@ -2000,29 +2249,29 @@
             <div class="footer-section">
                 <h3>Partner Hospitals</h3>
                 <ul>
-                    <li>Samsung Medical Center</li>
-                    <li>Seoul National University Hospital</li>
-                    <li>Asan Medical Center</li>
-                    <li>Severance Hospital (Yonsei)</li>
-                    <li>GS Eye Clinic</li>
-                    <li>Blanche Dental</li>
+                    <li>Severance Hospital (Yonsei University Health System)</li>
+                    <li>GS Eye Clinic (Advanced Vision Correction Center, Gangnam, Seoul)</li>
+                    <li>Severance Health Checkup Center</li>
+                    <li>Dojakgi Clinic</li>
                 </ul>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2025 RealbuzzKorea. All rights reserved. | Licensed Medical Tourism Provider in Republic of Korea</p>
+            <p>&copy; 2025 RealbuzzKorea. All rights reserved. | Licensed Medical Tourism Provider in Republic of Korea
+            </p>
         </div>
     </footer>
 
     <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/82XXXXXXXXXX?text=Hello! I want to get a free consultation for medical treatment in Korea" class="whatsapp-float">
+    <a href="https://wa.me/+821037744561?text=Hello! I want to get a free consultation for medical treatment in Korea"
+        class="whatsapp-float">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
+
     <script>
         // Initialize AOS (Animate On Scroll)
         AOS.init({
@@ -2076,7 +2325,7 @@
                     current = target;
                     clearInterval(timer);
                 }
-                
+
                 if (element.textContent.includes('%')) {
                     element.textContent = Math.floor(current) + '%';
                 } else if (element.textContent.includes('+')) {
@@ -2117,7 +2366,7 @@
         // Contact functions
         function openWhatsApp() {
             const message = encodeURIComponent("Hello! I want to get a free consultation for medical treatment in Korea and learn about your special offer.");
-            window.open(`https://wa.me/82XXXXXXXXXX?text=${message}`, '_blank');
+            window.open(`https://wa.me/+82 10-3774-4561?text=${message}`, '_blank');
         }
 
         function openTelegram() {
@@ -2126,10 +2375,10 @@
 
         // Hospital card interactions
         document.querySelectorAll('.hospital-button').forEach(button => {
-            button.addEventListener('click', function() {
+            button.addEventListener('click', function () {
                 const hospitalName = this.closest('.hospital-card').querySelector('.hospital-name').textContent;
                 const message = encodeURIComponent(`Hello! I'm interested in ${hospitalName}. Could you provide more information about treatments and pricing?`);
-                window.open(`https://wa.me/82XXXXXXXXXX?text=${message}`, '_blank');
+                window.open(`https://wa.me/+82 10-3774-4561?text=${message}`, '_blank');
             });
         });
 
@@ -2137,7 +2386,7 @@
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
             const rate = scrolled * -0.5;
-            
+
             document.querySelectorAll('.floating-card').forEach((card, index) => {
                 card.style.transform = `translateY(${rate * (index + 1) * 0.1}px)`;
             });
@@ -2145,11 +2394,11 @@
 
         // Enhanced hover effects for service cards
         document.querySelectorAll('.service-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
+            card.addEventListener('mouseenter', function () {
                 this.style.background = 'linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(240, 147, 251, 0.05))';
             });
-            
-            card.addEventListener('mouseleave', function() {
+
+            card.addEventListener('mouseleave', function () {
                 this.style.background = 'white';
             });
         });
@@ -2161,13 +2410,13 @@
                     const img = entry.target;
                     img.style.opacity = '0';
                     img.style.transform = 'scale(1.1)';
-                    
+
                     setTimeout(() => {
                         img.style.transition = 'all 0.6s ease';
                         img.style.opacity = '1';
                         img.style.transform = 'scale(1)';
                     }, 100);
-                    
+
                     imageObserver.unobserve(img);
                 }
             });
@@ -2199,7 +2448,7 @@
 
         // Add bounce effect to CTA buttons
         document.querySelectorAll('.btn-primary, .btn-secondary, .cta-button').forEach(button => {
-            button.addEventListener('click', function(e) {
+            button.addEventListener('click', function (e) {
                 this.style.transform = 'scale(0.95)';
                 setTimeout(() => {
                     this.style.transform = '';
@@ -2214,12 +2463,12 @@
 
         // Enhanced accessibility
         document.querySelectorAll('button, a').forEach(element => {
-            element.addEventListener('focus', function() {
+            element.addEventListener('focus', function () {
                 this.style.outline = '2px solid #f093fb';
                 this.style.outlineOffset = '2px';
             });
-            
-            element.addEventListener('blur', function() {
+
+            element.addEventListener('blur', function () {
                 this.style.outline = 'none';
             });
         });
@@ -2229,7 +2478,7 @@
         if (titleElement) {
             const text = titleElement.innerHTML;
             titleElement.innerHTML = '';
-            
+
             setTimeout(() => {
                 titleElement.innerHTML = text;
                 titleElement.style.animation = 'fadeInUp 1s ease-out forwards';
@@ -2239,7 +2488,7 @@
         // Add loading state management
         window.addEventListener('load', () => {
             document.body.classList.add('loaded');
-            
+
             // Trigger entrance animations
             setTimeout(() => {
                 document.querySelectorAll('.floating-card').forEach((card, index) => {
@@ -2251,19 +2500,19 @@
 
         // Advanced scroll effects
         let ticking = false;
-        
+
         function updateScrollEffects() {
             const scrollY = window.pageYOffset;
-            
+
             // Parallax effect for hero background
             const hero = document.querySelector('.hero');
             if (hero) {
                 hero.style.backgroundPosition = `center ${scrollY * 0.5}px`;
             }
-            
+
             ticking = false;
         }
-        
+
         window.addEventListener('scroll', () => {
             if (!ticking) {
                 requestAnimationFrame(updateScrollEffects);
@@ -2272,7 +2521,5 @@
         });
     </script>
 </body>
+
 </html>
-
-
-                    
